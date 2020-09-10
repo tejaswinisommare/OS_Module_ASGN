@@ -243,10 +243,10 @@ Q1) Create directory of your name and then create 4 files inside it named
     a.txt, b.txt, c.txt and d.sh. And change the directory permission to
     only user and also files permission to only user such that
 
- ans:	mkdir Rahul
-	cd Rahul
+ ans:	mkdir teju
+	cd teju
 	touch a.txt b.txt c.txt d.sh
-	chmod 700 Rahul
+	chmod 700 teju
 	
 A) User can read and write the file a.txt and b.txt
 
@@ -272,14 +272,14 @@ ans:	chmod 100 d.sh
 Q2. Change the permission of the previous directory to executable only.
 	Analyze the output.
 
-ans:	chmod 100 rahul
+ans:	chmod 100 teju
 
 
 
 Q3) Change the permission of the previous directory to read only.
 	Analyze the output.
 
-ans:	chmod 400 Rahul
+ans:	chmod 400 teju
 
 
 
@@ -302,7 +302,7 @@ ans:
  
 Q7) Use echo to append your name to a.txt
 
-ans: echo Rahul > a.txt
+ans: echo teju > a.txt
 
 ----------------------------------------------------------------------------------------------------------------------
 
@@ -418,13 +418,13 @@ ans:	ls a/copied_dir
 
 11) Try moving copied_dir to outside of a
 
-ans:	mv /home/Dell/a/copied_dir /home/rahul
+ans:	mv /home/Dell/a/copied_dir /home/teju
 
  
 
 12) Try moving data directory outside of a
 
-ans:	mv /home/Dell/a/b/data /home/rahul
+ans:	mv /home/Dell/a/b/data /home/teju
 
 	=> "PERMISSION DENIED"
 
