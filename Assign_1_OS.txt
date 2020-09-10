@@ -1,0 +1,543 @@
+
+
+	Name: Tejaswini Sommare		
+	Roll no.: 200240520108	
+	
+
+-------------------------------------------------------------------------------------------------------------------------
+
+1.
+ANS->  1)date
+    
+ date
+Tue Sep  8 20:13:58 IST 2020
+
+ date +%a
+Tue
+
+2)
+ cal
+   September 2020
+Su Mo Tu We Th Fr Sa
+       1  2  3  4  5
+ 6  7  8  9 10 11 12
+13 14 15 16 17 18 19
+20 21 22 23 24 25 26
+27 28 29 30
+
+ cal +2020
+                            2020
+      January               February               March
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+          1  2  3  4                     1   1  2  3  4  5  6  7
+ 5  6  7  8  9 10 11   2  3  4  5  6  7  8   8  9 10 11 12 13 14
+12 13 14 15 16 17 18   9 10 11 12 13 14 15  15 16 17 18 19 20 21
+19 20 21 22 23 24 25  16 17 18 19 20 21 22  22 23 24 25 26 27 28
+26 27 28 29 30 31     23 24 25 26 27 28 29  29 30 31
+
+
+       April                  May                   June
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+          1  2  3  4                  1  2      1  2  3  4  5  6
+ 5  6  7  8  9 10 11   3  4  5  6  7  8  9   7  8  9 10 11 12 13
+12 13 14 15 16 17 18  10 11 12 13 14 15 16  14 15 16 17 18 19 20
+19 20 21 22 23 24 25  17 18 19 20 21 22 23  21 22 23 24 25 26 27
+26 27 28 29 30        24 25 26 27 28 29 30  28 29 30
+                      31
+
+        July                 August              September
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+          1  2  3  4                     1         1  2  3  4  5
+ 5  6  7  8  9 10 11   2  3  4  5  6  7  8   6  7  8  9 10 11 12
+12 13 14 15 16 17 18   9 10 11 12 13 14 15  13 14 15 16 17 18 19
+19 20 21 22 23 24 25  16 17 18 19 20 21 22  20 21 22 23 24 25 26
+26 27 28 29 30 31     23 24 25 26 27 28 29  27 28 29 30
+                      30 31
+
+      October               November              December
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
+             1  2  3   1  2  3  4  5  6  7         1  2  3  4  5
+ 4  5  6  7  8  9 10   8  9 10 11 12 13 14   6  7  8  9 10 11 12
+11 12 13 14 15 16 17  15 16 17 18 19 20 21  13 14 15 16 17 18 19
+18 19 20 21 22 23 24  22 23 24 25 26 27 28  20 21 22 23 24 25 26
+25 26 27 28 29 30 31  29 30                 27 28 29 30 31
+
+3)echo 
+
+echo "hello dac"
+hello dac
+echo $dac.sh
+.sh
+
+4) who
+ who -aH
+NAME       LINE         TIME             IDLE          PID COMMENT  EXIT
+
+5)uname
+-> linux
+-------------------------------------------------------------------------------------------------------------------
+
+
+Q2) 
+
+A) Create three directory a b and c and create a.txt,b.txt and c.txt
+   in each directory respectively and then copy c directory into the a.
+
+ans:	mkdir a b c
+     	cd a
+     	touch a.txt
+     	cd ..
+     	cd b
+     	touch b.txt
+     	cd..
+     	cd c
+     	touch c.txt
+     	cp -r c a  	=>for copying c directory into a directory
+
+
+
+B) Move Directory b to c.
+
+ans:	mv b c
+
+
+
+C) Create alias of ls -lh command to your name.
+
+ans:	alias teju="ls -lh"
+
+
+
+D) Change Directory name a to cdac.
+
+ans:	mv a cdac
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Q3)
+ 
+A) Create five files file1.txt , file2.txt ,file3.txt file4.txt and
+    file5.txt with some text inside it. Search for 's' character
+    inside all the files using grep command.
+    Also Use cat to view all file content together.
+
+ans:	touch file1.txt file2.txt file3.txt file4.txt file5.txt 	=> creating text files
+     	nano ./file1.txt  (press enter to edit text file)		=> editing file
+     	This is file 1.   (press cltr+x to save the file)
+     	nano ./file2.txt 
+     	so, how was the trip?   
+     	nano ./file3.txt 
+     	World is a better place without me!   
+     	nano ./file4.txt 
+     	hello there!  
+     	nano ./file5.txt
+     	This is last file.
+      	grep s file1.txt file2.txt file3.txt file4.txt file5.txt 	=> searching s in all files simultaneously.
+     
+
+
+             
+B) Create file.txt using cat and edit that using nano editor.
+
+ans:	cat > file.txt
+      	This is a test file.	=> writing content. (cltr+c to save the file) 	
+      	nano ./file.txt 		=> To edit the content
+      	this is modified test file. (press cltr+x to save and exit.)      
+
+
+
+C) Create 5 empty files using touch command
+
+ans:	touch f1.txt f2.txt f3.txt f4.txt f5.txt
+
+
+
+D) Remove previously created directory a , b and c.
+
+ans: 	rm a/a.txt
+     	rmdir a
+     	rm b/b.txt
+     	rmdir b
+     	rm c/c.txt
+     	rmdir c
+
+------------------------------------------------------------------------------------------------------------------------------
+
+Q4) Create a file with some content using vi editor
+	
+A) Display the file using cat command
+
+ans: 	vi test.txt 	(press enter)
+	Hello World! 	(press Ecs and type :wq , then press Enter to save content and exit from file)
+	
+	cat text.txt
+
+
+
+B) Display line numbers along with content
+
+ans:	cat -n test.txt
+
+
+
+C) Display the file in reverse order using tac
+
+ans:	tac test.txt
+
+
+
+D) Combine multiple files using cat command
+
+ans:	cat test.txt file.txt > new.txt
+
+--------------------------------------------------------------------------------------------------------------------------
+ 
+Q5) Create Random some files and sub directories.
+
+A) display files row wise, column wise, 1 per row
+
+ans:	column test.txt
+
+
+
+B) sort the files in ascending, descending order
+
+ans:	sort test.txt
+	sort -r test.txt
+
+
+
+C) Create some hidden files and sub directories and display them using “ls -a”
+
+ans:	touch .hiddenFile
+	ls -a
+
+
+
+D) Change time stamp of some files and directories using touch command and display the files using ls -t ls -rt
+
+ans:	touch -t 205001232359.59 test.txt	=> setting customized timestamp in YYYYMMDDHHMM.SS format
+	stat test.txt				=> To see details of the file like access time etc  
+	touch -a file.txt			=> To set current time as access time for the file
+
+
+E) Recursive display contents of your home directory.
+
+ans:	ls -R
+
+
+
+F) Display all attributes of files and directories using ls -l
+
+ans:	ls -l
+
+
+
+G) Display attributes of a directory using ls -ld
+
+ans:	ls -ld
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Q1) Create directory of your name and then create 4 files inside it named
+    a.txt, b.txt, c.txt and d.sh. And change the directory permission to
+    only user and also files permission to only user such that
+
+ ans:	mkdir Rahul
+	cd Rahul
+	touch a.txt b.txt c.txt d.sh
+	chmod 700 Rahul
+	
+A) User can read and write the file a.txt and b.txt
+
+ans:	chmod 600 a.txt b.txt
+
+
+
+B) User can write the file c.txt
+
+ans:	chmod 600 c.txt
+
+
+
+C) User can exectuable the file d.sh. 
+	Make Contents of file d.sh:
+	#/bin/sh
+	 ls -lh
+
+ans:	chmod 100 d.sh 
+
+
+
+Q2. Change the permission of the previous directory to executable only.
+	Analyze the output.
+
+ans:	chmod 100 rahul
+
+
+
+Q3) Change the permission of the previous directory to read only.
+	Analyze the output.
+
+ans:	chmod 400 Rahul
+
+
+
+Q4) Use echo to list the all files of your home directory.
+
+ans:	echo *
+
+
+ 
+Q5) Use echo to list the all files of /etc/ directory
+
+ans: echo * /etc/
+
+	
+Q6) Use echo to list the all files of /etc/ directory with extension name .conf
+
+ans:
+
+ 
+ 
+Q7) Use echo to append your name to a.txt
+
+ans: echo Rahul > a.txt
+
+----------------------------------------------------------------------------------------------------------------------
+
+1) Create Three level nested directory a,b and c
+
+ans:	mkdir a
+	cd a
+	mkdir b
+	cd b
+	mkdir c
+
+
+
+A) Create at least one hidden file in each directory
+
+ans:	cd a
+ 	touch .a.txt
+	cd b
+	touch .b.txt
+	cd c
+	touch .c.txt
+
+
+B) Create at least one normal text file in each directory
+
+ans:	cd a
+	touch f1.txt
+	cd b
+	touch f2.txt
+	cd c
+	touch f3.txt
+
+
+
+C) Copy c into a
+
+ans:	cp -r a/b/c a
+
+
+
+D) Copy file inside a into b
+
+ans:	cp -r a/f1.txt a/b/c
+
+
+
+
+2) Change the third level directory c permission to read only
+
+ans:	chmod 444 c
+
+
+
+
+3) Try copying third level c directory to outside of a
+
+ans:	cp -r a/b/c a
+		output=> cp: cannot stat 'a/b/c/f3.txt': Permission denied
+			 cp: cannot stat 'a/b/c/.c.txt': Permission denied
+			 cp: cannot stat 'a/b/c/f1.txt': Permission denied
+	"PERMISSION DENIED!!"
+
+
+
+4) Create the directory  “data“ inside b
+
+ans:	mkdikr a/b/data
+
+
+
+5) Change the permission of b to read and write only
+
+ans:	chmod 666 a/b
+
+
+
+6) Create directory “data2”  inside b
+
+ans:	mkdir a/b/data2
+
+	=> "PERMISSION DENIED as we have chaged its permission to READ only".
+
+
+
+7) Create data.txt file inside b
+
+ans:	touch a/b/data.txt
+
+	=> "PERMISSION DENIED as we have chaged its permission to READ only".
+
+
+
+8) Rename the second level directory c to copied_dir
+
+ans:	cd a
+	mv c copied_dir
+
+
+
+9) Change permission of copied_dir to only executable
+
+ans:	chmod 111 a/copied_dir
+	
+
+
+10) Try ls on copied_dir
+
+ans:	ls a/copied_dir
+	
+	=> "PERMISSION DENIED as we have chaged its permission to EXECUTABLE only".
+	
+
+
+11) Try moving copied_dir to outside of a
+
+ans:	mv /home/Dell/a/copied_dir /home/rahul
+
+ 
+
+12) Try moving data directory outside of a
+
+ans:	mv /home/Dell/a/b/data /home/rahul
+
+	=> "PERMISSION DENIED"
+
+
+
+13) Now change the owner of the directory a to root
+
+ans:	sudo chown root a
+
+	password: (Enter root user password)
+
+
+14) Change permission of a to read write and executable to only user
+
+ans:	sudo su		=> getting into the root user 
+	[sudo] password for tejaswini-s:tejaswini
+	
+	chmod 700 a	=> to change permission
+
+	
+
+15) Try creating directory sample inside a
+
+ans:	sudo su
+	[sudo] password for tejaswini-s:tejaswini
+
+	mkdir a/sample
+
+
+
+16) Create directory x outside a
+
+ans:	mkdir x
+
+
+
+17) Try moving x inside a
+
+ans:	sudo su
+	[sudo] password for tejaswini-s:tejaswini
+
+	mv x a
+
+
+
+18) Create directory movies
+
+ans:	mkdir movies
+
+
+
+19) Change group of movies to sudo
+
+ans: 	sudo chgrp sudo movies
+
+
+
+20) Change group of movies to avahi
+
+ans: 	sudo addgroup avahi 	=> creating avahi group
+	sudo chgrp avahi movies 
+
+
+21) Try changing permission after changing ownership to root
+
+ans:	sudo su
+	[sudo] password for tejaswini-s:tejaswini
+	
+	chmod 777 a
+
+
+
+22) Try Changing permission after changing group to sudo without sudo
+
+ans: 	chmod 777 movies
+
+
+
+23) Try Changing owner and group both to root
+
+ans:	sudo chown root file.txt
+	sudo chgrp root file.txt
+
+
+
+24) Try changinging permission 
+
+ans:	sudo su
+	[sudo] password for tejaswini-s:tejaswini
+
+	chmod 777 file1.txt
+
+	
+25) Try deleting the file
+
+ans:	rm file.txt
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
