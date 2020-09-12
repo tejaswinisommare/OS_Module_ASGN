@@ -296,7 +296,7 @@ ans: echo * /etc/
 	
 Q6) Use echo to list the all files of /etc/ directory with extension name .conf
 
-ans:
+ans: echo * /etc/ "* .conf"
 
  
  
@@ -339,13 +339,13 @@ ans:	cd a
 
 C) Copy c into a
 
-ans:	cp -r a/b/c a
+ans:	cp -r c a
 
 
 
 D) Copy file inside a into b
 
-ans:	cp -r a/f1.txt a/b/c
+ans:	cp -r a/f1.txt b
 
 
 
@@ -418,13 +418,13 @@ ans:	ls a/copied_dir
 
 11) Try moving copied_dir to outside of a
 
-ans:	mv /home/Dell/a/copied_dir /home/teju
+ans:	mv /home/Dell/d/OS MODULE/a/copied_dir /home/teju
 
  
 
 12) Try moving data directory outside of a
 
-ans:	mv /home/Dell/a/b/data /home/teju
+ans:	mv /home/Dell/d/OS MODULE/a/b/data /home/teju
 
 	=> "PERMISSION DENIED"
 
