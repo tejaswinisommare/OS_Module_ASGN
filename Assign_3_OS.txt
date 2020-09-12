@@ -79,9 +79,38 @@ Write a program in C/CPP to check the scheduling policy used by the process and 
 	(Hint(functions to be used) : sched_getscheduler, getpid) 
 ANS->
 
+#include<iostream>
+#include<unistd.h>
+#include<stdlib.h>
+#include<sched.h>
+
+using namespace std;
+
+int main()
+{
+        int a;
+        a=sched_getscheduler(getpid());
+        switch(a)
+        {
+                case SCHED_OTHER:cout<<"another scheduling poly"<<endl;
+                break;
+                case SCHED_RR:cout<<"round robin scheduler"<<endl;
+                break;
+                case SCHED_FIFO:cout<<"first in first out"<<endl;
+                break;
+
+        }
+return 0;
+}
+
+OUTPUT:
+another scheduling policy
 
 
-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 3.	Scheduling functions 
 Write a program in C/CPP to get the current scheduling policy of the process. 
 The program should change the scheduling policy to the other than current one. 
@@ -91,9 +120,36 @@ Program should report errors if it fails to set the new scheduling policy.
 ANS->
 
 
+#include<iostream>
+#include<unistd.h>
+#include<sched.h>
+using namespace std;
+int main()
+{
+        int a;
+        a=sched_setscheduler(getpid(),SCHED_FIFO,0);
+
+        if(a==0)
+        {
+                cout<<"priority set";
+        }
+        else
+        {
+                cout<<"priority not set";
+        }
+return 0;
+}
+OUTPUT:
+priority not set
 
 
---------------------------------------------------------------------------------------------------------------
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+
 4.	Scheduling algorithm 
 Write a program in C/CPP to take process name, its arrival time and execution/burst time as input. 
 	Use FCFS(non-preemptive) algorithm to calculate wait time of each process, average 
