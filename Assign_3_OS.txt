@@ -79,33 +79,6 @@ Write a program in C/CPP to check the scheduling policy used by the process and 
 	(Hint(functions to be used) : sched_getscheduler, getpid) 
 ANS->
 
-#include<iostream>
-#include<unistd.h>
-#include<stdlib.h>
-#include<sched.h>
-
-using namespace std;
-
-int main()
-{
-        int a;
-        a=sched_getscheduler(getpid());
-        switch(a)
-        {
-                case SCHED_OTHER:cout<<"another scheduling poly"<<endl;
-                break;
-                case SCHED_RR:cout<<"round robin scheduler"<<endl;
-                break;
-                case SCHED_FIFO:cout<<"first in first out"<<endl;
-                break;
-
-        }
-return 0;
-}
-
-OUTPUT:
-another scheduling policy
-
 
 
 ------------------------------------------------------------------------------------------------------------
@@ -118,27 +91,6 @@ Program should report errors if it fails to set the new scheduling policy.
 ANS->
 
 
-#include<iostream>
-#include<unistd.h>
-#include<sched.h>
-using namespace std;
-int main()
-{
-        int a;
-        a=sched_setscheduler(getpid(),SCHED_FIFO,0);
-
-        if(a==0)
-        {
-                cout<<"priority set";
-        }
-        else
-        {
-                cout<<"priority not set";
-        }
-return 0;
-}
-OUTPUT:
-priority not set
 
 
 --------------------------------------------------------------------------------------------------------------
